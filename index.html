@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Work Opportunities in Japan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Work Opportunities<em></em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                </li> 
+
+                <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Unlock Your Career Potential in Japan</h4>
+            <h2>Discover Exciting Work Opportunities in the Land of the Rising Sun</h2>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Unlock Your Career Potential in Japan</h4>
+            <h2>Discover Exciting Work Opportunities in the Land of the Rising Sun</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Unlock Your Career Potential in Japan</h4>
+            <h2>Discover Exciting Work Opportunities in the Land of the Rising Sun</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="latest-products">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>Featured Jobs</h2>
+                <a href="jobs.html">view more <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-12" id="featuredJobsRow">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="services" style="background-image: url(assets/images/white-office-background-dizain-instagram-4.jpg);" >
+      <div class="best-features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2 style="color: #000000;">About Us</h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div style="color: #000000;" class="left-content">
+                <h5>In Japan, the cultural and lifestyle aspects of employee work are deeply intertwined with traditional values and societal norms. One notable characteristic is the emphasis on collective harmony and group cohesion within the workplace. Japanese employees often prioritize teamwork and consensus-building over individual recognition, fostering a sense of unity and shared responsibility. This collective mindset extends beyond professional settings, influencing social interactions and daily life, where respect for hierarchy and adherence to social etiquette are paramount.</h5>
+                <a style="background-color: #009dff;" href="about-us.html" class="filled-button">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image">
+                <img src="assets/images/living-in-rural-japan-199886.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      <div class="container" style="margin-bottom: 45px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Need assistance or have a question?</h4>
+                  <p>Feel free to reach out to our dedicated support team, we're here to help!</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-right">
+                  <a style="background-color: #009dff;" href="contact.html" class="filled-button">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script>
+      // JavaScript code to fetch and populate the featured jobs
+      const url = 'https://indeed12.p.rapidapi.com/job/02eb3a9f080f10e7';
+      const options = {
+          method: 'GET',
+          headers: {
+              'X-RapidAPI-Key': '3c8164d0dbmshc099b7e51cab729p1eed94jsnec9a3d908c3e',
+              'X-RapidAPI-Host': 'indeed12.p.rapidapi.com'
+          }
+      };
+
+      const featuredJobsRow = document.getElementById('featuredJobsRow');
+
+      async function fetchAndPopulateJobs() {
+          try {
+              const response = await fetch(url, options);
+              const data = await response.json();
+              // Assuming the data structure returned from the API is an array of jobs
+              // You might need to adjust this based on the actual structure of the data
+              console.log(data);
+              // Check if data is in the expected format
+              if (typeof data === 'object') {
+                        const jobHTML = `
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <a href="${data.indeed_final_url}"><img src="${data.logo_url || 'assets/images/employee.jpg'}" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="${data.indeed_final_url}"><h4>${data.job_title}</h4></a>
+                                        <h6>$${data.salary.min.toFixed(2)} - $${data.salary.max.toFixed(2)}</h6>
+                                        <h4><small><i class="fa fa-briefcase"></i> ${data.job_type} <br> <strong><i class="fa fa-building"></i> ${data.company.name}</strong></small></h4>
+                                        <small>
+                                            <strong title="Posted on"><i class="fa fa-calendar"></i> ${data.creation_date}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <strong title="Type"><i class="fa fa-file"></i> ${data.job_type}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <strong title="Location"><i class="fa fa-map-marker"></i> ${data.location}</strong>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        featuredJobsRow.innerHTML = jobHTML;
+                    } 
+                    else {
+                        console.error('Data is not in the expected format.');
+                    }
+          } catch (error) {
+              console.error(error);
+          }
+      }
+
+      fetchAndPopulateJobs();
+  </script>
+  </body>
+</html>
